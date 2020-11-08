@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/0e5072c2d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <h1 class="text-center text-info"> Password Generator</h1>
+        <h4 class="text-center text-secondary">makes your safe password</h4>
+        <div class="content">
+         <div class="pw-header d-flex justify-content-center mt-5">
+            <div class="pw d-inline"></div>
+             <button  id="copy-cl" class="ml-4"><span style = " color: Dodgerblue;"><i class="fas fa-copy d-inline"></span></i></button>
+         </div>
+         <div class="content-body mt-4">
+             <div class="form-control w-50 d-flex justify-content-center">
+                 <label for="len">Password Length</label>
+                 <input class="ml-4" type="number" id="len" min="4" max="40">
+             </div>
+             <div class="form-control w-50 d-flex justify-content-center">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input class="ml-4" type="checkbox" id="upper">
+            </div>
+            <div class="form-control w-50 d-flex justify-content-center">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input class="ml-4" type="checkbox" id="lower">
+            </div>
+            <div class="form-control w-50 d-flex justify-content-center">
+                <label for="num">Contain Numbers</label>
+                <input class="ml-4" type="checkbox" id="num">
+            </div>
+            <div class="form-control w-50 d-flex justify-content-center">
+                <label for="sym">Contain Symbols</label>
+                <input class="ml-4" type="checkbox" id="sym">
+            </div>
+            <div class="btn-th d-flex justify-content-center mt-3">
+            <button class="btn btn-warning">Generate Password</button>
+            </div>
+         </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
